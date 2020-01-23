@@ -57,7 +57,7 @@ export default class Home extends Component {
                                     <div className="tweet-user-info">
                                         <a href="#" className="name">Name</a>
                                         <p className="username-time">@Username · 5m</p>
-                                        <i class="fas fa-chevron-down"></i>
+                                        <i className="fas fa-chevron-down"></i>
                                     </div>
 
                                     <div className="tweet-content">
@@ -66,20 +66,30 @@ export default class Home extends Component {
 
 
                                         <div className="social-buttons">
-                                            <i class="far fa-comment"><p>8</p></i>
-                                            <i class="fas fa-retweet"><p>3</p></i>
-                                            <i class="far fa-heart"><p>235</p></i>
-                                            <i class="fas fa-upload"></i>
+                                            <div className="comment">
+                                                <i className="far fa-comment"></i>
+                                                <p>8</p>
+                                            </div>
+
+                                            <div className="retweet">
+                                                <i className="fas fa-retweet"></i>
+                                                <p>3</p>
+                                            </div>
+
+                                            <div className="heart">
+                                                <i className="far fa-heart"></i>
+                                                <p>235</p>
+                                            </div>
+                                            <div className="upload">
+                                                <i className="fas fa-upload"></i>
+                                            </div>
                                         </div>
                                     </div>
 
                                 </div>
                             </div>
-
                         </div>
-
                     </section>
-
                 </div>
             </div>
         )
