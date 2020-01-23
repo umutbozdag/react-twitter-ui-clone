@@ -4,15 +4,17 @@
         "profile_img": "https://randomuser.me/api/portraits/men/60.jpg",
         "image": "https://www.smartworld.it/wp-content/uploads/2018/07/Facebook-Mark-Zuckerberg.jpg",
         "message": "Facebook now lets everyone unsend messages for up to 10 minutes https://techcrunch.com/2019/02/05/facebook-messenger-remove/ … by @JoshConstine",
-        "likes": ["markZuck", "donnie", "EduardoSaverin", "DMoskovitz"],
+        "likes": ["markZuck", "donnie", "EduardoSaverin", "DMoskovitz", "print", "sds", "asdq", "helloworld", "healler", "sesqgw"],
         "comments": [{
             "author": "markZuck",
             "message": "👏👏👏"
         }],
+        "retweets": ["print", "sds", "hassan", "helloworld", "healler", "sesqgw"],
         "time": "2m"
     }, {
         "id": 1,
         "author": "JoshConstine",
+        "nick": "JoshConstine",
         "profile_img": "https://randomuser.me/api/portraits/men/11.jpg",
         "image": "https://pbs.twimg.com/media/D1KNUQ8VAAAEx8L.jpg",
         "message": "THREAD: After writing hundreds of articles about about apps this year, here’s my wishlist of feature launches like Twitter DM search & Uber “Quiet Ride”. First up, Instagram... 1/",
@@ -23,12 +25,17 @@
         }, {
             "author": "JoshConstine",
             "message": "No problem"
-        }]
+        }],
+        "retweets": ["print", "andhers", "llland", "helloworld", "healler"],
+
+        "time": "3m"
+
     },
     {
-        "id": 1,
+        "id": 2,
         "author": "JoshConstine",
-        "profile_img": "https://randomuser.me/api/portraits/men/11.jpg",
+        "nick": "JoshConstine",
+        "profile_img": "https://randomuser.me/api/portraits/men/28.jpg",
         "image": "https://pbs.twimg.com/media/D1KNUQ8VAAAEx8L.jpg",
         "message": "THREAD: After writing hundreds of articles about about apps this year, here’s my wishlist of feature launches like Twitter DM search & Uber “Quiet Ride”. First up, Instagram... 1/",
         "likes": ["nick", "steve2"],
@@ -38,11 +45,16 @@
         }, {
             "author": "JoshConstine",
             "message": "No problem"
-        }]
+        }],
+        "retweets": ["print", "cuzof", "justhere", "helloworld"],
+
+        "time": "7m"
+
     },
     {
-        "id": 1,
+        "id": 3,
         "author": "JoshConstine",
+        "nick": "JoshConstine",
         "profile_img": "https://randomuser.me/api/portraits/men/11.jpg",
         "image": "https://pbs.twimg.com/media/D1KNUQ8VAAAEx8L.jpg",
         "message": "THREAD: After writing hundreds of articles about about apps this year, here’s my wishlist of feature launches like Twitter DM search & Uber “Quiet Ride”. First up, Instagram... 1/",
@@ -53,66 +65,186 @@
         }, {
             "author": "JoshConstine",
             "message": "No problem"
-        }]
+        }],
+        "retweets": ["print"],
+
+        "time": "9m"
+
     },
     {
-        "id": 1,
+        "id": 4,
         "author": "JoshConstine",
+        "nick": "JoshConstine",
         "profile_img": "https://randomuser.me/api/portraits/men/11.jpg",
         "image": "https://pbs.twimg.com/media/D1KNUQ8VAAAEx8L.jpg",
         "message": "THREAD: After writing hundreds of articles about about apps this year, here’s my wishlist of feature launches like Twitter DM search & Uber “Quiet Ride”. First up, Instagram... 1/",
-        "likes": ["nick", "steve2"],
+        "likes": ["nick", "steve2", "iknewit", "bummer"],
         "comments": [{
             "author": "steve2",
             "message": "Thanks 🖐"
         }, {
             "author": "JoshConstine",
             "message": "No problem"
-        }]
+        }],
+        "retweets": ["print", "sds", "uthere", "helloworld", "healler"],
+
+        "time": "12m"
+
     },
     {
-        "id": 1,
+        "id": 8,
         "author": "JoshConstine",
+        "nick": "JoshConstine",
+
         "profile_img": "https://randomuser.me/api/portraits/men/11.jpg",
         "image": "https://pbs.twimg.com/media/D1KNUQ8VAAAEx8L.jpg",
         "message": "THREAD: After writing hundreds of articles about about apps this year, here’s my wishlist of feature launches like Twitter DM search & Uber “Quiet Ride”. First up, Instagram... 1/",
-        "likes": ["nick", "steve2"],
+        "likes": ["nick", "steve2", "", ""],
         "comments": [{
             "author": "steve2",
             "message": "Thanks 🖐"
         }, {
             "author": "JoshConstine",
             "message": "No problem"
-        }]
+        }],
+        "retweets": ["print", "asdq", "helloworld", "oneday", "sesqgw"],
+
+        "time": "17m"
+
     },
     {
-        "id": 1,
-        "author": "JoshConstine",
-        "profile_img": "https://randomuser.me/api/portraits/men/11.jpg",
+        "id": 12,
+        "author": "New Era",
+        "nick": "NewEra",
+
+        "profile_img": "https://randomuser.me/api/portraits/women/17.jpg",
         "image": "https://pbs.twimg.com/media/D1KNUQ8VAAAEx8L.jpg",
         "message": "THREAD: After writing hundreds of articles about about apps this year, here’s my wishlist of feature launches like Twitter DM search & Uber “Quiet Ride”. First up, Instagram... 1/",
         "likes": ["nick", "steve2"],
         "comments": [{
-            "author": "steve2",
-            "message": "Thanks 🖐"
-        }, {
-            "author": "JoshConstine",
-            "message": "No problem"
-        }]
+                "author": "steve2",
+                "message": "Thanks 🖐"
+            }, {
+                "author": "JoshConstine",
+                "message": "No problem"
+            },
+            {
+                "author": "No one",
+                "message": "Hey there"
+            },
+            {
+                "author": "No one",
+                "message": "Hey there"
+            }
+        ],
+        "retweets": ["print", "helloworld", "healler", "maybe"],
+
+        "time": "58m"
+
     },
     {
-        "id": 1,
-        "author": "JoshConstine",
-        "profile_img": "https://randomuser.me/api/portraits/men/11.jpg",
+        "id": 24,
+        "author": "Hello World",
+        "nick": "HelloWorld",
+
+        "profile_img": "https://randomuser.me/api/portraits/women/57.jpg",
         "image": "https://pbs.twimg.com/media/D1KNUQ8VAAAEx8L.jpg",
         "message": "THREAD: After writing hundreds of articles about about apps this year, here’s my wishlist of feature launches like Twitter DM search & Uber “Quiet Ride”. First up, Instagram... 1/",
         "likes": ["nick", "steve2"],
         "comments": [{
-            "author": "steve2",
-            "message": "Thanks 🖐"
-        }, {
-            "author": "JoshConstine",
-            "message": "No problem"
-        }]
+                "author": "steve2",
+                "message": "Thanks 🖐"
+            },
+            {
+                "author": "JoshConstine",
+                "message": "No problem"
+            },
+            {
+                "author": "No one",
+                "message": "Hey there"
+            }
+        ],
+        "retweets": ["print", "logiman", "helloworld"],
+
+        "time": "23h"
+
+    },
+    {
+        "id": 27,
+        "author": "ReactiveBoy",
+        "nick": "ReactiveBoy",
+        "profile_img": "https://randomuser.me/api/portraits/men/25.jpg",
+        "image": "https://pbs.twimg.com/media/D1KNUQ8VAAAEx8L.jpg",
+        "message": "THREAD: After writing hundreds of articles about about apps this year, here’s my wishlist of feature launches like Twitter DM search & Uber “Quiet Ride”. First up, Instagram... 1/",
+        "likes": ["nick", "steve2"],
+        "comments": [{
+                "author": "steve2",
+                "message": "Thanks 🖐"
+            },
+            {
+                "author": "JoshConstine",
+                "message": "No problem"
+            },
+            {
+                "author": "No one",
+                "message": "Hey there"
+            }
+        ],
+        "retweets": ["print", "logiman", "helloworld"],
+
+        "time": "24h"
+
+    },
+    {
+        "id": 127,
+        "author": "Just testing",
+        "nick": "JustTesting",
+        "profile_img": "https://randomuser.me/api/portraits/men/1.jpg",
+        "image": "https://pbs.twimg.com/media/D1KNUQ8VAAAEx8L.jpg",
+        "message": "THREAD: After writing hundreds of articles about about apps this year, here’s my wishlist of feature launches like Twitter DM search & Uber “Quiet Ride”. First up, Instagram... 1/",
+        "likes": ["nick", "steve2"],
+        "comments": [{
+                "author": "steve2",
+                "message": "Thanks 🖐"
+            },
+            {
+                "author": "JoshConstine",
+                "message": "No problem"
+            },
+            {
+                "author": "No one",
+                "message": "Hey there"
+            }
+        ],
+        "retweets": ["print", "logiman", "helloworld"],
+
+        "time": "1d"
+
+    },
+    {
+        "id": 1500,
+        "author": "No one",
+        "nick": "Noone",
+        "profile_img": "https://randomuser.me/api/portraits/men/24.jpg",
+        "image": "https://pbs.twimg.com/media/D1KNUQ8VAAAEx8L.jpg",
+        "message": "THREAD: After writing hundreds of articles about about apps this year, here’s my wishlist of feature launches like Twitter DM search & Uber “Quiet Ride”. First up, Instagram... 1/",
+        "likes": ["nick", "steve2", "noone", "robot"],
+        "comments": [{
+                "author": "steve2",
+                "message": "Thanks 🖐"
+            },
+            {
+                "author": "JoshConstine",
+                "message": "No problem"
+            },
+            {
+                "author": "No one",
+                "message": "Hey there"
+            }
+        ],
+        "retweets": ["print", "logiman", "helloworld"],
+
+        "time": "3d"
+
     }
 ]

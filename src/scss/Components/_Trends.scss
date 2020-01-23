@@ -1,0 +1,84 @@
+@import '../colors';
+
+.Trends {
+    .trends-container {
+        background: $input-color;
+        margin-top: 24px;
+        border-radius: 24px;
+        padding: 12px 0;
+
+        .header {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            color: $white-color;
+            padding: 0 12px;
+
+            i {
+                color: $link-color;
+                padding: 10px;
+                border-radius: 50%;
+                cursor: pointer;
+                font-size: 20px;
+
+                &:hover {
+                    background: #2d475f;
+                    transition: 0.3s ease all;
+                }
+            }
+        }
+
+        .trendings {
+            padding: 0 12px;
+
+            .trend-info-top {
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+
+                .trend-location {
+                    color: gray;
+                    font-size: 14px;
+                }
+
+                i {
+                    color: gray;
+                    padding: 10px;
+                    border-radius: 50%;
+                    cursor: pointer;
+                    font-size: 16px;
+
+                    &:hover {
+                        background: $input-color;
+                        transition: 0.3s ease all;
+                    }
+                }
+            }
+
+            .trend-title {
+                margin-top: -6px;
+                color: $white-color;
+                font-size: 16px;
+            }
+
+            .tweet-count {
+                margin-top: -6px;
+                color: gray;
+                font-size: 14px;
+            }
+        }
+
+        .show-more-btn {
+            margin-left: 12px;
+            margin-top: 12px;
+            color: $link-color;
+            background: none;
+            border: 0;
+            font-size: 15px;
+        }
+    }
+}
+
+.wrapper {
+    border-bottom: 1px solid $border-color;
+}

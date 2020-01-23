@@ -13,8 +13,8 @@ function App() {
           <div className="column home">
             <Home></Home>
           </div>
-          <div className="column">
-            <Search></Search>
+          <div className="column right-side">
+            <Trends></Trends>
           </div>
         </div>
       </div>

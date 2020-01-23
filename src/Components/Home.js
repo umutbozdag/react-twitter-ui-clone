@@ -1,19 +1,31 @@
 import React from 'react';
 import { Component } from 'react';
 import '../scss/Components/_Home.scss';
-const data = require('../db.json');
+const tweets = require('../db.json');
 
 
 export default class Home extends Component {
 
+    state = {
+        likes: []
+    }
+
     componentDidMount() {
         this.displayPosts();
-        console.log(data);
+        console.log(tweets);
     }
 
 
     displayPosts = () => {
         console.log('data');
+    }
+
+    likeTweet = (index, tweet) => {
+        console.log(index, tweet);
+        tweet.likes.push("asd");
+
+        // this.setState({ likes: tweet.likes.length })
+
     }
 
     render() {
@@ -45,50 +57,53 @@ export default class Home extends Component {
                     </section>
                     <div className="wrapper"></div>
                     <section className="tweets">
-                        <div className="tweet">
-                            <div className="tweet-row">
+                        {tweets.map((tweet, index) => (
+                            <div key={tweet.id} className="tweet">
+                                <div className="tweet-row">
 
-                                <div className="tweet-column">
-                                    <img className="user-photo" src="https://randomuser.me/api/portraits/men/44.jpg" alt="User face" />
+                                    <div className="tweet-column">
+                                        <img className="user-photo" src={tweet.profile_img} alt="User face" />
 
-                                </div>
-
-                                <div className="tweet-column">
-                                    <div className="tweet-user-info">
-                                        <a href="#" className="name">Name</a>
-                                        <p className="username-time">@Username · 5m</p>
-                                        <i className="fas fa-chevron-down"></i>
                                     </div>
 
-                                    <div className="tweet-content">
-                                        <p className="tweet-desc">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Cum quae perspiciatis dolorem eaque sint quaerat velit, ullam exercitationem magnam, expedita mollitia qui autem voluptate distinctio totam sed ex reprehenderit aut beatae. Eaque, illo. Nam similique ea veritatis voluptates iste perspiciatis.</p>
-                                        <img className="tweet-photo" src="https://www.smartworld.it/wp-content/uploads/2018/07/Facebook-Mark-Zuckerberg.jpg" alt="Tweet img" />
+                                    <div className="tweet-column">
+                                        <div className="tweet-user-info">
+                                            <a href={tweet.author} className="name">{tweet.author}</a>
+                                            <p className="username-time">@{tweet.nick} · {tweet.time}</p>
+                                            <i className="fas fa-chevron-down"></i>
+                                        </div>
+
+                                        <div className="tweet-content">
+                                            <p className="tweet-desc">{tweet.message}</p>
+                                            <img className="tweet-photo" src={tweet.image} alt="Tweet img" />
 
 
-                                        <div className="social-buttons">
-                                            <div className="comment">
-                                                <i className="far fa-comment"></i>
-                                                <p>8</p>
-                                            </div>
+                                            <div className="social-buttons">
+                                                <div className="comment">
+                                                    <i className="far fa-comment"></i>
+                                                    <p>{tweet.comments.length}</p>
+                                                </div>
 
-                                            <div className="retweet">
-                                                <i className="fas fa-retweet"></i>
-                                                <p>3</p>
-                                            </div>
+                                                <div className="retweet">
+                                                    <i className="fas fa-retweet"></i>
+                                                    <p>{tweet.retweets.length}</p>
+                                                </div>
 
-                                            <div className="heart">
-                                                <i className="far fa-heart"></i>
-                                                <p>235</p>
-                                            </div>
-                                            <div className="upload">
-                                                <i className="fas fa-upload"></i>
+                                                <div className="heart">
+                                                    <i onClick={() => this.likeTweet(index, tweet)} className="far fa-heart"></i>
+                                                    <p>{tweet.likes.length}</p>
+                                                </div>
+                                                <div className="upload">
+                                                    <i className="fas fa-upload"></i>
+                                                </div>
                                             </div>
                                         </div>
-                                    </div>
 
+                                    </div>
                                 </div>
                             </div>
-                        </div>
+                        ))}
+
                     </section>
                 </div>
             </div>

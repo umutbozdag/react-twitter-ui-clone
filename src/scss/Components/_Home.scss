@@ -1,9 +1,5 @@
 @import '../colors';
-
-
-$font: 'Open Sans',
-sans-serif;
-
+@import '../fonts';
 
 body {
     font-family: $font;

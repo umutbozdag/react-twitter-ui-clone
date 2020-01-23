@@ -6,7 +6,6 @@ body {
 
 .App {
     .container {
-
         .row {
             display: flex;
             padding: 0 22rem;
@@ -19,6 +18,11 @@ body {
 
             .home {
                 margin-left: 5%;
+            }
+
+            .right-side {
+                margin-top: 12px;
+                margin-left: 2%;
             }
 
         }
