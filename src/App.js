@@ -1,7 +1,6 @@
 import React from 'react';
 import './App.scss';
-import Nav from './Components/Nav';
-import Home from './Components/Home';
+import { Nav, Home, Search, Trends, WhoToFollow, Footer } from './Components';
 
 function App() {
   return (
@@ -13,6 +12,9 @@ function App() {
           </div>
           <div className="column home">
             <Home></Home>
+          </div>
+          <div className="column">
+            <Search></Search>
           </div>
         </div>
       </div>

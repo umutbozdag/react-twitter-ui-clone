@@ -1,6 +1,6 @@
 import React from 'react';
 import { Component } from 'react';
-import '../scss/Components/Home.scss';
+import '../scss/Components/_Home.scss';
 const data = require('../db.json');
 
 
