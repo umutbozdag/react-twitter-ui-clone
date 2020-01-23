@@ -1,6 +1,8 @@
 @import '../colors';
 
 .Trends {
+    cursor: pointer;
+
     .trends-container {
         background: $input-color;
         margin-top: 24px;
@@ -12,7 +14,11 @@
             align-items: center;
             justify-content: space-between;
             color: $white-color;
-            padding: 0 12px;
+            padding: 0 18px;
+
+            h2 {
+                margin-bottom: 8px;
+            }
 
             i {
                 color: $link-color;
@@ -29,7 +35,7 @@
         }
 
         .trendings {
-            padding: 0 12px;
+            padding: 0 18px;
 
             .trend-info-top {
                 display: flex;

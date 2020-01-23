@@ -1,32 +1,9 @@
 import React from 'react';
 import { Component } from 'react';
 import '../scss/Components/_Home.scss';
-const tweets = require('../db.json');
 
 
 export default class Home extends Component {
-
-    state = {
-        likes: []
-    }
-
-    componentDidMount() {
-        this.displayPosts();
-        console.log(tweets);
-    }
-
-
-    displayPosts = () => {
-        console.log('data');
-    }
-
-    likeTweet = (index, tweet) => {
-        console.log(index, tweet);
-        tweet.likes.push("asd");
-
-        // this.setState({ likes: tweet.likes.length })
-
-    }
 
     render() {
         return (
@@ -57,7 +34,7 @@ export default class Home extends Component {
                     </section>
                     <div className="wrapper"></div>
                     <section className="tweets">
-                        {tweets.map((tweet, index) => (
+                        {this.props.tweets.map((tweet, index) => (
                             <div key={tweet.id} className="tweet">
                                 <div className="tweet-row">
 

@@ -1,0 +1,84 @@
+@import '../colors';
+@import '../fonts';
+
+
+.WhoToFollow {
+    margin-top: 24px;
+    cursor: pointer;
+
+    .container {
+        background: $input-color;
+        border-radius: 24px;
+        padding: 12px 0;
+
+        .title {
+            margin-bottom: 8px;
+            color: $white-color;
+            padding: 0 18px;
+
+        }
+
+        .follow-suggestions {
+            padding: 0 18px;
+
+            .suggestion {
+                margin-top: 12px;
+                display: flex;
+                align-items: center;
+
+                .img-container {
+                    .person-img {
+                        width: 64px;
+                        border-radius: 50%;
+                    }
+                }
+
+                .person-info-container {
+                    margin-left: 12px;
+                    margin-right: auto;
+
+                    .person-name {
+                        margin-bottom: -12px;
+                        color: $white-color;
+                    }
+
+                    .person-username {
+                        color: gray;
+                    }
+
+                }
+
+                .follow-btn {
+                    background: transparent;
+                    color: $link-color;
+                    border-radius: 32px;
+                    border: 1px solid $link-color;
+                    padding: 8px 18px;
+                    font-weight: 800;
+                    cursor: pointer;
+                    outline: none;
+
+                    &:hover {
+                        background: rgba(0, 183, 255, 0.1);
+                        transition: 0.4s ease all;
+                    }
+                }
+            }
+        }
+    }
+}
+
+.show-more-btn {
+    margin-left: 12px;
+    margin-top: 12px;
+    color: $link-color;
+    background: none;
+    border: 0;
+    font-size: 15px;
+}
+
+
+
+.wrapper {
+    border-bottom: 1px solid $border-color !important;
+}

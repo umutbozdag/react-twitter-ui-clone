@@ -1,12 +1,12 @@
 import React, { Component } from 'react'
 import Search from './Search';
 import '../scss/Components/_Trends.scss';
+import { WhoToFollow } from '.';
 
 export default class Trends extends Component {
     render() {
         return (
             <div className="Trends">
-                <Search></Search>
                 <div className="trends-container">
                     <div className="header">
                         <h2>Trends for you</h2>
