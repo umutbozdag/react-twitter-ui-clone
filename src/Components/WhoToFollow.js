@@ -2,9 +2,9 @@ import React, { Component } from 'react'
 import '../scss/Components/_WhoToFollow.scss'
 export default class WhoToFollow extends Component {
     render() {
+        const MAX_PEOPLE = 3
         const tweets = this.props.tweets;
-        console.log(tweets);
-        tweets.length = 3;
+        tweets.length = MAX_PEOPLE;
         return (
             <div className="WhoToFollow">
                 <div className="container">
@@ -14,7 +14,7 @@ export default class WhoToFollow extends Component {
 
                     <div className="follow-suggestions">
                         {tweets.map((tweet, index) => (
-                            <div className="suggestion">
+                            <div key={tweet.id} className="suggestion">
                                 <div className="img-container">
                                     <img className="person-img" src={tweet.profile_img} alt="" />
                                 </div>

@@ -1,6 +1,5 @@
-@import '../colors';
-@import '../fonts';
-
+@import "../colors";
+@import "../fonts";
 
 .WhoToFollow {
     margin-top: 24px;
@@ -12,10 +11,9 @@
         padding: 12px 0;
 
         .title {
-            margin-bottom: 8px;
+            margin: 8px 0;
             color: $white-color;
             padding: 0 18px;
-
         }
 
         .follow-suggestions {
@@ -45,7 +43,6 @@
                     .person-username {
                         color: gray;
                     }
-
                 }
 
                 .follow-btn {
@@ -75,10 +72,6 @@
     background: none;
     border: 0;
     font-size: 15px;
-}
-
-
-
-.wrapper {
-    border-bottom: 1px solid $border-color !important;
+    cursor: pointer;
+    outline: none;
 }

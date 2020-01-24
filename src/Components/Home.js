@@ -5,6 +5,10 @@ import '../scss/Components/_Home.scss';
 
 export default class Home extends Component {
 
+    likeTweet = () => {
+        console.log('tweet')
+    }
+
     render() {
         return (
             <div className="Home">

@@ -20,6 +20,7 @@ class App extends Component {
               <Search></Search>
               <Trends></Trends>
               <WhoToFollow tweets={tweets}></WhoToFollow>
+              <Footer></Footer>
             </div>
           </div>
         </div>

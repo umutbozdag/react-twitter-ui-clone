@@ -53,7 +53,9 @@ export default class Trends extends Component {
                             <div className="wrapper"></div>
                         </div>
                     </div>
-                    <button className="show-more-btn">Show more</button>
+                    <div className="btn-container">
+                        <button className="show-more-btn">Show more</button>
+                    </div>
                 </div>
             </div>
         )
