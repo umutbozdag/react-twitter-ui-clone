@@ -1,8 +1,10 @@
 @import '../colors';
+@import '../fonts';
 
 .Nav {
 
   .container {
+
     .nav-icon {
       font-size: 32px;
       color: white;
@@ -10,28 +12,23 @@
       padding: 12px 12px 12px 0;
       border-radius: 32px;
       margin-bottom: 4px;
-
     }
   }
 
   .links {
-    display: flex;
-    flex-direction: column;
 
-    link {
-
-      &:hover {
-        background: white;
-        padding: 24px;
-      }
+    .link {
+      display: flex;
+      align-items: center;
     }
 
     i {
       font-size: 26px;
       color: #ffffff;
-      padding: 12px 0px;
+      padding: 12px 4px;
       display: flex;
       align-items: center;
+      cursor: pointer;
     }
 
     .fa-home {
@@ -45,8 +42,7 @@
       text-decoration: none;
       font-weight: 800;
       margin-left: 24px;
-      font-family: 'Open Sans',
-        sans-serif;
+      font-family: $font;
     }
 
     .active {
@@ -54,21 +50,69 @@
     }
   }
 
-  .tweet-button {
-    background: rgb(0, 183, 255);
-    padding: 16px 80px;
-    border: 0;
-    color: white;
-    border-radius: 32px;
-    margin-top: 32px;
-    font-size: 16px;
-    font-weight: 800;
-    cursor: pointer;
-    outline: none;
 
-    &:hover {
-      background: rgba(0, 183, 255, 0.8);
-      transition: all 0.5s ease;
+
+  .button-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    .tweet-button {
+      background: rgb(0, 183, 255);
+      padding: 16px 80px;
+      border: 0;
+      color: white;
+      border-radius: 32px;
+      margin-top: 32px;
+      font-size: 16px;
+      font-weight: 800;
+      cursor: pointer;
+      outline: none;
+
+      &:hover {
+        background: rgba(0, 183, 255, 0.8);
+        transition: all 0.5s ease;
+      }
     }
+
+    .tweet-button-mobile {
+      background: $link-color;
+      border: none;
+      padding: 16px;
+      border-radius: 50%;
+      margin-top: 8px;
+      display: none;
+      cursor: pointer;
+      outline: 0;
+
+      i {
+        color: $white-color;
+        font-size: 16px;
+      }
+    }
+  }
+
+
+
+}
+
+
+@media (max-width: 1024px) {
+
+
+  i {
+    margin-bottom: 12px;
+
+    a {
+      display: none;
+    }
+  }
+
+  .tweet-button {
+    display: none;
+  }
+
+  .tweet-button-mobile {
+    display: block !important;
   }
 }

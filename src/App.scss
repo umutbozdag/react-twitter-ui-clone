@@ -38,9 +38,78 @@ body {
                 margin-left: 2%;
                 display: flex;
                 flex-direction: column;
-                @include stickyDiv();
             }
 
         }
     }
+}
+
+@media (max-width: 1650px) {
+    .App {
+
+        .container {
+            .row {
+                display: flex;
+                padding: 0 16rem;
+
+                .column {
+                    display: flex;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 1440px) {
+
+    .App {
+
+        .container {
+            .row {
+                display: flex;
+                padding: 0 4rem;
+
+                .column {
+                    display: flex;
+                }
+            }
+        }
+    }
+
+}
+
+
+@media (max-width: 1300px) {
+
+    .App {
+
+        .container {
+
+            .row {
+                display: flex;
+                padding: 0 1rem;
+            }
+        }
+    }
+
+}
+
+
+@media (max-width: 800px) {
+
+    .App {
+
+        .container {
+
+            .row {
+                display: flex;
+                padding: 0 3rem;
+
+                .right-side {
+                    display: none;
+                }
+            }
+        }
+    }
+
 }

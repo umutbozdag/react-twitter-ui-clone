@@ -1,3 +1,4 @@
+/* eslint-disable jsx-a11y/anchor-is-valid */
 import React from 'react'
 import '../scss/Components/_Footer.scss';
 export default function Footer() {

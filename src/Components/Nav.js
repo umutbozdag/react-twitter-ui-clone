@@ -1,3 +1,4 @@
+/* eslint-disable jsx-a11y/anchor-is-valid */
 import React from 'react';
 import { Component } from 'react';
 import '../scss/Components/_Nav.scss';
@@ -15,16 +16,35 @@ export default class Nav extends Component {
                         <div className="link">
                             <i className="fas fa-hashtag"> <a href="#">Explore</a></i>
                         </div>
-                        <i className="far fa-bell"><a href="#">Notifications</a>
-                        </i>
-                        <i className="far fa-envelope"><a href="#">Messages</a></i>
-                        <i className="far fa-bookmark"><a href="#">Bookmarks</a></i>
-                        <i className="far fa-list-alt"> <a href="#">Lists</a></i>
-                        <i className="far fa-user"><a href="#">Profile</a>
-                        </i>
-                        <i className="far fa-dot-circle"><a href="#">More</a></i>
+                        <div className="link">
+                            <i className="far fa-bell"><a href="#">Notifications</a>
+                            </i>
+                        </div>
+
+                        <div className="link">
+                            <i className="far fa-envelope"><a href="#">Messages</a></i>
+                        </div>
+
+                        <div className="link">
+                            <i className="far fa-bookmark"><a href="#">Bookmarks</a></i>
+                        </div>
+
+                        <div className="link">
+                            <i className="far fa-list-alt"> <a href="#">Lists</a></i>
+                        </div>
+
+                        <div className="link">
+                            <i className="far fa-user"><a href="#">Profile</a></i>
+                        </div>
+                        <div className="link">
+                            <i className="far fa-dot-circle"><a href="#">More</a></i>
+                        </div>
                     </div>
-                    <button className="tweet-button">Tweet</button>
+                    <div className="button-container">
+                        <button className="tweet-button">Tweet</button>
+                        <button className="tweet-button-mobile"><i className="fas fa-pen-alt"></i></button>
+                    </div>
+
                 </div>
             </div >
         )

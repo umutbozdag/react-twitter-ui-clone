@@ -287,31 +287,26 @@ body {
   margin-bottom: 4px;
 }
 
-.Nav .links {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-}
-
-.Nav .links link:hover {
-  background: white;
-  padding: 24px;
-}
-
-.Nav .links i {
-  font-size: 26px;
-  color: #ffffff;
-  padding: 12px 0px;
+.Nav .links .link {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+}
+
+.Nav .links i {
+  font-size: 26px;
+  color: #ffffff;
+  padding: 12px 4px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  cursor: pointer;
 }
 
 .Nav .links .fa-home {
@@ -325,14 +320,26 @@ body {
   text-decoration: none;
   font-weight: 800;
   margin-left: 24px;
-  font-family: 'Open Sans', sans-serif;
+  font-family: "Open Sans", sans-serif;
 }
 
 .Nav .links .active {
   color: #00b7ff;
 }
 
-.Nav .tweet-button {
+.Nav .button-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.Nav .button-container .tweet-button {
   background: #00b7ff;
   padding: 16px 80px;
   border: 0;
@@ -345,10 +352,41 @@ body {
   outline: none;
 }
 
-.Nav .tweet-button:hover {
+.Nav .button-container .tweet-button:hover {
   background: rgba(0, 183, 255, 0.8);
   -webkit-transition: all 0.5s ease;
   transition: all 0.5s ease;
+}
+
+.Nav .button-container .tweet-button-mobile {
+  background: #00b7ff;
+  border: none;
+  padding: 16px;
+  border-radius: 50%;
+  margin-top: 8px;
+  display: none;
+  cursor: pointer;
+  outline: 0;
+}
+
+.Nav .button-container .tweet-button-mobile i {
+  color: #ffffff;
+  font-size: 16px;
+}
+
+@media (max-width: 1024px) {
+  i {
+    margin-bottom: 12px;
+  }
+  i a {
+    display: none;
+  }
+  .tweet-button {
+    display: none;
+  }
+  .tweet-button-mobile {
+    display: block !important;
+  }
 }
 
 body {
@@ -611,9 +649,54 @@ body {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  position: -webkit-sticky;
-  position: sticky;
-  top: 12px;
-  height: 100%;
+}
+
+@media (max-width: 1650px) {
+  .App .container .row {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    padding: 0 16rem;
+  }
+  .App .container .row .column {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+}
+
+@media (max-width: 1440px) {
+  .App .container .row {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    padding: 0 4rem;
+  }
+  .App .container .row .column {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+}
+
+@media (max-width: 1300px) {
+  .App .container .row {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    padding: 0 1rem;
+  }
+}
+
+@media (max-width: 800px) {
+  .App .container .row {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    padding: 0 3rem;
+  }
+  .App .container .row .right-side {
+    display: none;
+  }
 }
 /*# sourceMappingURL=App.css.map */
